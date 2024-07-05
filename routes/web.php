@@ -31,7 +31,7 @@ Route::get('/', [LoginController::class, 'index'])->name('login')->middleware('g
 Route::post('/', [LoginController::class, 'login']);
 Route::post('/register', [LoginController::class, 'register']);
 
-// cek auth login
+// cek auth login ini dalah
 Route::get('cek', function () {
     // Auth::logout();
     dd(Auth::user());
