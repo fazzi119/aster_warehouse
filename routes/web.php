@@ -34,6 +34,7 @@ Route::post('/register', [LoginController::class, 'register']);
 // cek auth login ini dalah
 Route::get('cek', function () {
     // Auth::logout();
+    dd(phpinfo());
     dd(Auth::user());
 });
 
